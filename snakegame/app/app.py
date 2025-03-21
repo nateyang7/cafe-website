@@ -33,7 +33,7 @@ class App(tk.Tk):
         self.init_keybindings()
         self.init_snake_coordinates_and_squares()
         self.init_food_coordinates()
-        self.spawn_food(self.food)
+        self.spawn_food()
         self.next_turn()
         self.mainloop()
 
@@ -57,8 +57,6 @@ class App(tk.Tk):
         self.bind("<Up>", lambda event: self.change_direction("up"))
         self.bind("<Down>", lambda event: self.change_direction("down"))
 
-
-
     def init_food_coordinates(self) -> None:
         """
         Initialise la position de la nourriture
@@ -81,8 +79,7 @@ class App(tk.Tk):
             )
             self.snake.squares.append(square)
 
-
-    def spawn_food(self, food: Food) -> None:
+    def spawn_food(self) -> None:
         """ Dessine la nourriture sur le canvas """
         self.canvas.create_oval(
             self.food.x, self.food.y, self.food.x + self.SPACE_SIZE,
@@ -107,12 +104,28 @@ class App(tk.Tk):
         square = self.canvas.create_rectangle(
             x, y, x + self.SPACE_SIZE, y + self.SPACE_SIZE, fill=self.snake)
         self.snake.squares.insert(0, square)
-        del self.snake.coordinates[-1]
-        self.canvas.delete(self.snake.squares[-1])
-        del self.snake.squares[-1]
 
-        # Prochain tour
-        self.after(self.SPEED, self.next_turn)
+        # Vérifie si le serpent mange la nourriture
+        if x == self.food.x and y == self.food.y:
+            self.score += 1
+            self.score_label.config(text=f"Score: {self.score}")
+            self.canvas.delete("food")
+            self.food = Food()
+            self.init_food_coordinates()
+            self.spawn_food()
+
+        # Sinon fait bouger le serpent
+        else:
+            del self.snake.coordinates[-1]
+            self.canvas.delete(self.snake.squares[-1])
+            del self.snake.squares[-1]
+
+        # Vérifie les collisions du serpent avec son corps ou les murs
+        if self.check_collisions():
+            self.game_over()
+        else:
+            # Passe au prochain tour
+            self.after(self.SPEED, self.next_turn)
 
     def change_direction(self, new_direction: str) -> None:
         """
@@ -134,13 +147,29 @@ class App(tk.Tk):
             if self.direction != "up":
                 self.direction = new_direction
 
-    def check_collisions(self) -> None:
+    def check_collisions(self) -> bool:
         """
-
-        Returns:
-
+        Teste si le serpent rentre en collision avec son corps ou les
+        bordures de la grille
         """
-        pass
+        x, y = self.snake.coordinates[0]
+
+        # Vérifie si le serpent est hors des bordures de la grille
+        if x < 0 or x >= self.GAME_WIDTH:
+            return True
+        if y < 0 or y >= self.GAME_HEIGHT:
+            return True
+
+        for body_part in self.snake.coordinates[1:]:
+            if x == body_part[0] and y == body_part[1]:
+                return True
+        return False
+
+    def game_over(self) -> None:
+        self.canvas.delete(tk.ALL)
+        self.canvas.create_text(
+            self.canvas.winfo_width() / 2, self.canvas.winfo_height() / 2,
+            font=("consolas", 70), text="GAME OVER", fill="red", tag="gameover")
 
 
 

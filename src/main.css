@@ -16,6 +16,10 @@ body {
     padding: 0;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 /* Navigation Bar */
 .navbar {
     overflow: hidden;
@@ -59,6 +63,17 @@ main {
 }
 
 /* Home */
+
+/* Menu */
+#menu {
+    display: grid;
+    place-items: center;
+}
+
+#dishes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /* Footer */
 footer {

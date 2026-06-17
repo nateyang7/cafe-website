@@ -8,10 +8,10 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     padding: 0;
 }
 
@@ -39,17 +39,17 @@ body {
 main {
     margin: 0;
     height: 100vh;
-}
-
-#home {
     background-image: url("./assets/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#home h1 {
-    margin: 0;
+/* Home */
+#home {
+    display: grid;
+    place-items: center;
+    color: var(--text-color);
 }
 
 /* Footer */

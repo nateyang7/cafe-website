@@ -80,6 +80,15 @@ main {
 }
 
 .consumable {
+    background-color: var(--main-color);
+    margin: 1em;
+    height: 10em;
+    width: 10em;
+    display: grid;
+    place-items: center;
+}
+
+.consumable img {
     width: 100px;
     height: 100px;
 }

@@ -55,12 +55,12 @@ function addConsumables(container, typeToDisplay) {
       // Create the div to contain the consumable informations
       let consumableDiv = document.createElement("div");
       consumableDiv.id = consumable._name.toLocaleLowerCase();
+      consumableDiv.className = "consumable";
 
       // Create the image for the consumable
       let consumableImg = document.createElement("img");
       consumableImg.src = consumable._image;
       consumableImg.alt = consumable._name;
-      consumableImg.className = "consumable";
       consumableDiv.appendChild(consumableImg);
 
       // Create the header for the name of the consumable

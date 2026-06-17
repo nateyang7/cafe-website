@@ -13,7 +13,7 @@ const coffeesContainer = document.getElementById("coffees-container");
 const food = document.getElementById("food");
 const viennoiseries = document.getElementById("viennoiseries");
 
-// List of coffees
+// Add coffees to coffees container
 for (const consumable of consumables) {
   if (consumable._type === ConsumableType.DRINK) {
     let coffeeDiv = document.createElement("div");

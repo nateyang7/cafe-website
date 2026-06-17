@@ -1,1 +1,34 @@
 /* src/main.css */
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    overflow: hidden;
+    background-color: #252525;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #252525;
+}
+
+/* Main content */
+
+/* Footer */

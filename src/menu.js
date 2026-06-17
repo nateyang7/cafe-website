@@ -30,11 +30,13 @@ const viennoiseriesContainer = document.getElementById(
 function addConsumables(container, typeToDisplay) {
   for (const consumable of consumables) {
     if (consumable._type === typeToDisplay) {
+      // Create the div to contain the consumable informations
       let consumableDiv = document.createElement("div");
       consumableDiv.id = consumable._name.toLocaleLowerCase();
 
+      // Create the header for the name of the consumable
       let consumableH3 = document.createElement("h3");
-      consumableH3.textContent = consumable._name;
+      consumableH3.textContent = `${consumable._name} : ${consumable._price} €`;
       consumableDiv.appendChild(consumableH3);
 
       container.appendChild(consumableDiv);

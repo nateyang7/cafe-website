@@ -6,6 +6,12 @@ const consumables = [
   new Consumable("Expresso", ConsumableType.DRINK, 1.0),
   new Consumable("Cappuccino", ConsumableType.DRINK, 3.0),
   new Consumable("Latte", ConsumableType.DRINK, 3.5),
+  new Consumable("Quiche", ConsumableType.FOOD, 4.0),
+  new Consumable("Croque-Monsieur", ConsumableType.FOOD, 4.0),
+  new Consumable("Caesar Salad", ConsumableType.FOOD, 8.0),
+  new Consumable("Croissant", ConsumableType.VIENNOISERIE, 4.0),
+  new Consumable("Chocolate Croissant", ConsumableType.VIENNOISERIE, 1.0),
+  new Consumable("Brioche", ConsumableType.VIENNOISERIE, 1.0),
 ];
 
 // Sections id
@@ -37,3 +43,5 @@ function addConsumables(container, typeToDisplay) {
 }
 
 addConsumables(coffeesContainer, ConsumableType.DRINK);
+addConsumables(foodContainer, ConsumableType.FOOD);
+addConsumables(viennoiseriesContainer, ConsumableType.VIENNOISERIE);

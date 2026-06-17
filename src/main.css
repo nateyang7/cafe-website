@@ -9,6 +9,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    color: var(--text-color);
 }
 
 body {
@@ -37,6 +38,8 @@ body {
 
 /* Main content */
 main {
+    display: grid;
+    place-items: center;
     margin: 0;
     height: 100vh;
     background-image: url("./assets/background.jpg");
@@ -46,11 +49,6 @@ main {
 }
 
 /* Home */
-#home {
-    display: grid;
-    place-items: center;
-    color: var(--text-color);
-}
 
 /* Footer */
 footer {

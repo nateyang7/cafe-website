@@ -17,11 +17,13 @@ export class Consumable {
    * @param { string } type - Consumable's type.
    * @param { number } price - Consumable's price in euros.
    */
+  static id = 0;
+
   constructor(name, type, price) {
-    this._id = 0;
+    Consumable.id++;
+    this._id = Consumable.id;
     this._name = name;
     this._type = type;
     this._price = price;
-    this._id++;
   }
 }

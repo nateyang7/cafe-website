@@ -45,3 +45,5 @@ function addConsumables(container, typeToDisplay) {
 addConsumables(coffeesContainer, ConsumableType.DRINK);
 addConsumables(foodContainer, ConsumableType.FOOD);
 addConsumables(viennoiseriesContainer, ConsumableType.VIENNOISERIE);
+
+console.log(consumables);

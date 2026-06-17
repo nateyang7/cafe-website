@@ -10,19 +10,30 @@ const consumables = [
 
 // Sections id
 const coffeesContainer = document.getElementById("coffees-container");
-const food = document.getElementById("food");
-const viennoiseries = document.getElementById("viennoiseries");
+const foodContainer = document.getElementById("food-container");
+const viennoiseriesContainer = document.getElementById(
+  "viennoiseries-container",
+);
 
-// Add coffees to coffees container
-for (const consumable of consumables) {
-  if (consumable._type === ConsumableType.DRINK) {
-    let coffeeDiv = document.createElement("div");
-    coffeeDiv.id = consumable._name.toLocaleLowerCase();
+/**
+ * Add consumables of a type to a container of the HTML page.
+ *
+ * @param { HTMLElement } container - Element ID of the container of the HTML page.
+ * @param { ConsumableType } typeToDisplay - Type of consumable to display only.
+ */
+function addConsumables(container, typeToDisplay) {
+  for (const consumable of consumables) {
+    if (consumable._type === typeToDisplay) {
+      let consumableDiv = document.createElement("div");
+      consumableDiv.id = consumable._name.toLocaleLowerCase();
 
-    let coffeeH3 = document.createElement("h3");
-    coffeeH3.textContent = consumable._name;
-    coffeeDiv.appendChild(coffeeH3);
+      let consumableH3 = document.createElement("h3");
+      consumableH3.textContent = consumable._name;
+      consumableDiv.appendChild(consumableH3);
 
-    coffeesContainer.appendChild(coffeeDiv);
+      container.appendChild(consumableDiv);
+    }
   }
 }
+
+addConsumables(coffeesContainer, ConsumableType.DRINK);

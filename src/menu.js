@@ -2,16 +2,38 @@
 
 import { ConsumableType, Consumable } from "./consumable.js";
 
+const expressoImg = "../assets/consumables/expresso.jpg";
+const cappuccinoImg = "../assets/consumables/cappuccino.jpg";
+const latteImg = "../assets/consumables/latte.jpg";
+
+const quicheImg = "../assets/consumables/quiche.jpg";
+const croqueMonsieurImg = "../assets/consumables/croque-monsieur.jpg";
+const cesarSaladImg = "../assets/consumables/cesar-salad.jpg";
+
+const croissantImg = "../assets/consumables/croissant.jpg";
+const chocolateCroissantImg = "../assets/consumables/chocolate-croissant.jpg";
+const briocheImg = "../assets/consumables/brioche.jpg";
+
 const consumables = [
-  new Consumable("Expresso", ConsumableType.DRINK, 1.0),
-  new Consumable("Cappuccino", ConsumableType.DRINK, 3.0),
-  new Consumable("Latte", ConsumableType.DRINK, 3.5),
-  new Consumable("Quiche", ConsumableType.FOOD, 4.0),
-  new Consumable("Croque-Monsieur", ConsumableType.FOOD, 4.0),
-  new Consumable("Caesar Salad", ConsumableType.FOOD, 8.0),
-  new Consumable("Croissant", ConsumableType.VIENNOISERIE, 4.0),
-  new Consumable("Chocolate Croissant", ConsumableType.VIENNOISERIE, 1.0),
-  new Consumable("Brioche", ConsumableType.VIENNOISERIE, 1.0),
+  new Consumable(expressoImg, "Expresso", ConsumableType.DRINK, 1.0),
+  new Consumable(cappuccinoImg, "Cappuccino", ConsumableType.DRINK, 3.0),
+  new Consumable(latteImg, "Latte", ConsumableType.DRINK, 3.5),
+  new Consumable(quicheImg, "Quiche", ConsumableType.FOOD, 4.0),
+  new Consumable(
+    croqueMonsieurImg,
+    "Croque-Monsieur",
+    ConsumableType.FOOD,
+    4.0,
+  ),
+  new Consumable(cesarSaladImg, "Cesar Salad", ConsumableType.FOOD, 8.0),
+  new Consumable(croissantImg, "Croissant", ConsumableType.VIENNOISERIE, 4.0),
+  new Consumable(
+    chocolateCroissantImg,
+    "Chocolate Croissant",
+    ConsumableType.VIENNOISERIE,
+    1.0,
+  ),
+  new Consumable(briocheImg, "Brioche", ConsumableType.VIENNOISERIE, 1.0),
 ];
 
 // Sections id
@@ -33,6 +55,13 @@ function addConsumables(container, typeToDisplay) {
       // Create the div to contain the consumable informations
       let consumableDiv = document.createElement("div");
       consumableDiv.id = consumable._name.toLocaleLowerCase();
+
+      // Create the image for the consumable
+      let consumableImg = document.createElement("img");
+      consumableImg.src = consumable._image;
+      consumableImg.alt = consumable._name;
+      consumableImg.className = "consumable";
+      consumableDiv.appendChild(consumableImg);
 
       // Create the header for the name of the consumable
       let consumableH3 = document.createElement("h3");

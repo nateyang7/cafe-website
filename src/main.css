@@ -75,6 +75,11 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.consumable {
+    width: 100px;
+    height: 100px;
+}
+
 /* Footer */
 footer {
     height: 100%;

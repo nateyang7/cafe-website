@@ -12,6 +12,7 @@
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 /* Navigation Bar */
@@ -35,9 +36,25 @@ body {
 }
 
 /* Main content */
+main {
+    margin: 0;
+    height: 100vh;
+}
+
+#home {
+    background-image: url("./assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home h1 {
+    margin: 0;
+}
 
 /* Footer */
 footer {
+    height: 100%;
     background-color: var(--main-color);
     color: var(--text-color);
     padding: 10px;

@@ -1,6 +1,12 @@
 /* src/main.css */
 
 /* General */
+@font-face {
+    font-family: "KaiserTokumin";
+    src: url("assets/font/Kaisei_Tokumin/KaiseiTokumin-Regular.ttf")
+        format("woff2");
+}
+
 :root {
     --main-color: #252525;
     --text-color: white;
@@ -10,6 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     color: var(--text-color);
+    font-family: "KaiserTokumin", serif;
 }
 
 body {

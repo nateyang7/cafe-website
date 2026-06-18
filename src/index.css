@@ -67,6 +67,11 @@ body {
     margin: 0;
 }
 
+header,
+footer {
+    width: 100vw;
+}
+
 h1,
 h2 {
     font-family: var(--heading);

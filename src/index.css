@@ -9,7 +9,7 @@
 :root {
     --main-color: #252525; /* Jet Black */
     --secondary-color: #fafafa; /* Alabaster white */
-    --accent-color: #1e1e1e;
+    --third-color: #1e1e1e;
 }
 
 * {
@@ -21,23 +21,55 @@
 
 header,
 footer {
+    position: fixed;
+    height: fit-content;
     width: 100vw;
-    background-color: #1b1b1b;
+    background-color: var(--third-color);
     padding: 0.5em;
 }
 
 h1 {
+    width: 50%;
+    font-size: 80%;
+    text-align: center;
     padding: 0.5em;
-    border-radius: 30px;
     border: solid 1px var(--secondary-color);
-    background-color: #1b1b1b;
+    border-radius: 30px;
+    background-color: var(--third-color);
     text-transform: uppercase;
 }
 
-p {
-    margin: 0;
+/* Food sections */
+.foodSection {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-li {
-    list-style-type: none;
+.foodSection h1 {
+    width: 50%;
+}
+
+.foodContainer {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.foodDiv {
+    display: grid;
+    place-items: center;
+    gap: 0.1em;
+    width: 70%;
+    height: 70%;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+}
+
+.foodDiv img {
+    width: 90%;
+    height: 90%;
+    border-radius: 100px;
 }

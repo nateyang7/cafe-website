@@ -22,25 +22,20 @@
 header,
 footer {
     width: 100vw;
-    background-color: var(--main-color);
+    background-color: #1b1b1b;
     padding: 0.5em;
 }
 
 h1 {
-    background: black;
     padding: 0.5em;
     border-radius: 30px;
+    border: solid 1px var(--secondary-color);
+    background-color: #1b1b1b;
+    text-transform: uppercase;
 }
 
 p {
     margin: 0;
-}
-
-/* Home */
-h1 {
-    border: solid 1px var(--secondary-color);
-    background-color: var(--main-color);
-    text-transform: uppercase;
 }
 
 li {

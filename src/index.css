@@ -1,3 +1,11 @@
+/* src/index.css */
+
+@font-face {
+    font-family: "KaiseiTokumin";
+    src: url("./assets/font/Kaisei_Tokumin/KaiseiTokumin-Regular.ttf")
+        format("ttf");
+}
+
 :root {
     --main-color: #252525; /* Jet Black */
     --secondary-color: #fafafa; /* Alabaster white */
@@ -7,6 +15,7 @@
     margin: 0;
     background-color: var(--main-color);
     color: var(--secondary-color);
+    font-family: "KaiserTokumin", serif;
 }
 
 header,

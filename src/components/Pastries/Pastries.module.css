@@ -1,0 +1,9 @@
+/* src/components/Pastries/Pastries.module.css */
+
+.pastries {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px black;
+}

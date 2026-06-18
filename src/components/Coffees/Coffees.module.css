@@ -7,3 +7,13 @@
     height: 100vh;
     border: solid 1px black;
 }
+
+.consumablesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.consumableShowcase {
+    width: 100px;
+    height: 100px;
+}

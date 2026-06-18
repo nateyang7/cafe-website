@@ -9,6 +9,7 @@
 :root {
     --main-color: #252525; /* Jet Black */
     --secondary-color: #fafafa; /* Alabaster white */
+    --accent-color: #1e1e1e;
 }
 
 * {
@@ -21,15 +22,21 @@
 header,
 footer {
     width: 100vw;
+    background-color: var(--main-color);
+    padding: 0.5em;
 }
 
 h1 {
+    background: black;
     padding: 0.5em;
     border-radius: 30px;
 }
 
 p {
     margin: 0;
+}
+
+section h1 {
 }
 
 /* Home */

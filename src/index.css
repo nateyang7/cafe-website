@@ -36,9 +36,6 @@ p {
     margin: 0;
 }
 
-section h1 {
-}
-
 /* Home */
 h1 {
     border: solid 1px var(--secondary-color);

@@ -11,20 +11,19 @@ export default function Coffees() {
         {"\u{2615}"} Coffees {"\u{2615}"}
       </h1>
 
-      <div className={styles.consumablesContainer}>
+      <div className={styles.coffeesContainer}>
         {consumables
           .filter((coffee) => coffee.type === ConsumableType.DRINK)
           .map((coffee) => (
-            <div className="consumable" key={coffee.id}>
+            <div className={styles.coffeeDiv} key={coffee.id}>
               <img
                 src={coffee.image}
                 alt={coffee.name}
-                className={styles.consumableShowcase}
+                className={styles.coffeeImg}
               />
-              <ul>
-                <li>{coffee.name}</li>
-                <li>{coffee.price} €</li>
-              </ul>
+              <p>
+                <strong>{coffee.name}</strong> : {coffee.price} €
+              </p>
             </div>
           ))}
       </div>

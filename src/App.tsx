@@ -3,6 +3,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar.tsx";
 import Home from "./components/Home/Home.tsx";
+import Coffees from "./components/Coffees/Coffees.tsx";
 
 import home from "./assets/icons/home-icon.svg";
 import coffee from "./assets/icons/coffee-icon.svg";
@@ -23,6 +24,7 @@ function App() {
 
       <main>
         <Home />
+        <Coffees />
       </main>
 
       <footer></footer>

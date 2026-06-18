@@ -1,0 +1,9 @@
+/* src/components/Coffees/Coffees.module.css */
+
+.coffees {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px black;
+}

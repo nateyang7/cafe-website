@@ -15,16 +15,15 @@ export default function Pastries() {
         {consumables
           .filter((pastry) => pastry.type === ConsumableType.VIENNOISERIE)
           .map((pastry) => (
-            <div className="consumable" key={pastry.id}>
+            <div className={styles.pastryDiv} key={pastry.id}>
               <img
                 src={pastry.image}
                 alt={pastry.name}
-                className={styles.pastryShowcase}
+                className={styles.pastryImg}
               />
-              <ul className={styles.pastryDataUl}>
-                <li>{pastry.name}</li>
-                <li>{pastry.price} €</li>
-              </ul>
+              <p>
+                <strong>{pastry.name}</strong>: {pastry.price} €
+              </p>
             </div>
           ))}
       </div>

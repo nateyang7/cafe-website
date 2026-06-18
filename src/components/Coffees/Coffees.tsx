@@ -22,7 +22,7 @@ export default function Coffees() {
                 className={styles.coffeeImg}
               />
               <p>
-                <strong>{coffee.name}</strong> : {coffee.price} €
+                <strong>{coffee.name}</strong>: {coffee.price} €
               </p>
             </div>
           ))}

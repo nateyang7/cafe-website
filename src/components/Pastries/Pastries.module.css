@@ -5,19 +5,27 @@
     place-items: center;
     width: 100vw;
     height: 100vh;
-    border: solid 1px black;
 }
 
 .pastriesContainer {
     display: grid;
+    place-items: center;
+    gap: 5em;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.pastryShowcase {
-    width: 100px;
-    height: 100px;
+.pastryDiv {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    gap: 0.5em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    padding: 0.5em;
 }
 
-.pastryDataUl li {
-    text-decoration: none;
+.pastryImg {
+    width: 100px;
+    height: 100px;
 }

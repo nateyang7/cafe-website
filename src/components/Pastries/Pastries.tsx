@@ -7,7 +7,9 @@ import styles from "./Pastries.module.css";
 export default function Pastries() {
   return (
     <section id="pastries" className={styles.pastries}>
-      <h1>Pastries</h1>
+      <h1>
+        {"\u{1F950}"} Pastries {"\u{1F950}"}
+      </h1>
 
       <div className={styles.pastriesContainer}>
         {consumables

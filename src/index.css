@@ -23,10 +23,9 @@ footer {
     width: 100vw;
 }
 
-h1,
-h2,
-h3 {
-    color: var(--secondary-color);
+h1 {
+    padding: 0.5em;
+    border-radius: 30px;
 }
 
 p {

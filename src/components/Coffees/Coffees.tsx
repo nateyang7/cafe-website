@@ -7,7 +7,9 @@ import styles from "./Coffees.module.css";
 export default function Coffees() {
   return (
     <section id="coffees" className={styles.coffees}>
-      <h1>Coffees</h1>
+      <h1>
+        {"\u{2615}"} Coffees {"\u{2615}"}
+      </h1>
 
       <div className={styles.consumablesContainer}>
         {consumables

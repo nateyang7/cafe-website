@@ -7,6 +7,11 @@ A café-restaurant website built as a practice project.
 
 ## Contents
 - [Features](#Features)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Technologies](#Technologies)
+- [Ressources](#Ressources)
+- [Licence](#Licence)
 
 ## Features
 - [ ] Responsive design (Smartphone / Tablet / Desktop)
@@ -26,6 +31,10 @@ npm run dev
 - CSS3
 - TypeScript
 - React
+
+## Ressources
+- Background image: [WallHaven](https://wallhaven.cc/w/017krv)
+- Items images: Google Images (They are placeholders for the moment)
 
 ## Licence
 This project is licensed under the MIT License.

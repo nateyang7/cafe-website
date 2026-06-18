@@ -2,6 +2,7 @@
 
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar.tsx";
+import Home from "./components/Home/Home.tsx";
 
 import home from "./assets/icons/home-icon.svg";
 import coffee from "./assets/icons/coffee-icon.svg";
@@ -16,7 +17,15 @@ function App() {
 
   return (
     <>
-      <NavBar navigationLinks={navigationLinks} />
+      <header>
+        <NavBar navigationLinks={navigationLinks} />
+      </header>
+
+      <main>
+        <Home />
+      </main>
+
+      <footer></footer>
     </>
   );
 }

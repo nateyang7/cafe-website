@@ -41,8 +41,11 @@ h1 {
 
 /* Food sections */
 .foodSection {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
     width: 100vw;
     height: 100vh;
 }
@@ -72,4 +75,8 @@ h1 {
     width: 90%;
     height: 90%;
     border-radius: 100px;
+}
+
+.foodDiv p {
+    font-size: 80%;
 }

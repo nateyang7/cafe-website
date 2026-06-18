@@ -19,7 +19,7 @@ export default function Pastries() {
                 alt={pastry.name}
                 className={styles.pastryShowcase}
               />
-              <ul>
+              <ul className={styles.pastryDataUl}>
                 <li>{pastry.name}</li>
                 <li>{pastry.price} €</li>
               </ul>

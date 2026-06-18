@@ -29,7 +29,7 @@ function App() {
         <Pastries />
       </main>
 
-      <footer></footer>
+      <footer>&copy; Café 2026</footer>
     </>
   );
 }

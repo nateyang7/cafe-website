@@ -1,0 +1,6 @@
+/* src/components/NavBar/NavBar.module.css */
+
+.navbar {
+    display: flex;
+    gap: 1em;
+}

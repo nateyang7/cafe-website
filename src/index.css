@@ -62,7 +62,11 @@
     }
 
     #home h1 {
+        font-size: 150%;
         background-color: var(--third-color);
+        padding: 20px;
+        border-radius: 50px;
+        border: 2px solid var(--secondary-color);
     }
 
     /* Food Sections */

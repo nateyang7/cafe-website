@@ -74,12 +74,35 @@
 
     /* Food Sections */
     .foodSection {
+        display: grid;
+        place-items: center;
+        gap: 1em;
         padding-top: 12%;
+        padding-bottom: 12%;
+    }
+
+    .foodContainer {
+        display: grid;
+        place-items: center;
+        gap: 1em;
+    }
+
+    .foodDiv {
+        display: grid;
+        place-items: center;
+        border-radius: 30px;
+        border: 2px solid var(--secondary-color);
+        padding: 0.5em;
     }
 
     .foodDiv img {
         width: 100px;
         height: 100px;
+        border-radius: 50%;
+    }
+
+    .foodDiv p {
+        font-size: 0.7em;
     }
 }
 

@@ -1,8 +1,6 @@
 // src/components/NavBar.tsx
 
-import styles from "./NavBar.module.css";
-
-type NavigationLink = {
+export type NavigationLink = {
   name: string;
   icon: string;
 };
@@ -13,13 +11,10 @@ type NavBarProps = {
 
 export default function NavBar({ navigationLinks }: NavBarProps) {
   return (
-    <nav className={styles.navbar}>
-      <ul className={styles.navbarUl}>
+    <nav className="navBar">
+      <ul>
         {navigationLinks.map((navigationLink) => (
-          <li
-            className={styles.navBarLi}
-            key={navigationLink.name.toLocaleLowerCase()}
-          >
+          <li key={navigationLink.name.toLocaleLowerCase()}>
             <a href={"#" + navigationLink.name.toLocaleLowerCase()}>
               <img src={navigationLink.icon} />
             </a>

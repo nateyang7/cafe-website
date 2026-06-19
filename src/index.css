@@ -14,74 +14,61 @@
 
 * {
     margin: 0;
-    background-color: var(--main-color);
+    padding: 0;
     color: var(--secondary-color);
     font-family: "KaiserTokumin", serif;
 }
 
-/* === Mobile 1st =========================================================== */
-@media (min-width: 640px) {
+/* === Mobile portrait =========================================================== */
+@media (min-width: 320px) {
     header,
     footer {
-        position: fixed;
-        height: fit-content;
+        background-color: var(--third-color);
         width: 100vw;
-        background-color: var(--third-color);
-        padding: 0.5em;
     }
 
-    h1 {
-        width: 50%;
-        font-size: 80%;
-        text-align: center;
-        padding: 0.5em;
-        border: solid 1px var(--secondary-color);
-        border-radius: 30px;
-        background-color: var(--third-color);
-        text-transform: uppercase;
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
-    /* Food sections */
-    .foodSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5em;
+    section {
         width: 100vw;
         height: 100vh;
     }
 
-    .foodSection h1 {
-        width: 50%;
+    footer {
+        width: 100vw;
+        background-color: var(--third-color);
     }
 
-    .foodContainer {
+    /* Navigation Bar */
+    .navBar ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Home */
+    #home {
         display: grid;
         place-items: center;
-        gap: 1em;
-        width: 50%;
-        height: 50%;
+        background-image: url("./assets/background.jpg");
+        background-size: cover;
+        background-position: center;
     }
 
-    .foodDiv {
-        display: grid;
-        place-items: center;
-        gap: 0.1em;
-        width: 90%;
-        height: 100%;
-        border: 1px solid var(--secondary-color);
-        border-radius: 30px;
+    #home h1 {
+        background-color: var(--third-color);
     }
 
+    /* Food Sections */
     .foodDiv img {
-        width: 80%;
-        height: 80%;
-        border-radius: 50%;
-    }
-
-    .foodDiv p {
-        font-size: 55%;
+        width: 100px;
+        height: 100px;
     }
 }
 

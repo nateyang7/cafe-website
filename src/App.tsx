@@ -1,8 +1,11 @@
 // src/App.tsx
 
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar.tsx";
-import Home from "./components/Home/Home.tsx";
+
+import type { NavigationLink } from "./components/NavBar.tsx";
+
+import NavBar from "./components/NavBar.tsx";
+import Home from "./components/Home.tsx";
 import Coffees from "./components/Coffees.tsx";
 import Pastries from "./components/Pastries.tsx";
 
@@ -11,7 +14,7 @@ import coffee from "./assets/icons/coffee-icon.svg";
 import pastry from "./assets/icons/pastry-icon.svg";
 
 function App() {
-  const navigationLinks = [
+  const navigationLinks: NavigationLink[] = [
     { name: "home", icon: home },
     { name: "coffees", icon: coffee },
     { name: "pastries", icon: pastry },

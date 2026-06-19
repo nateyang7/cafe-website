@@ -34,8 +34,19 @@
     }
 
     section {
+        background-color: var(--main-color);
         width: 100vw;
         height: 100vh;
+    }
+
+    h1 {
+        font-size: 150%;
+        text-align: center;
+        background-color: var(--third-color);
+        padding: 20px;
+        border-radius: 50px;
+        border: 2px solid var(--secondary-color);
+        width: fit-content;
     }
 
     footer {
@@ -61,15 +72,11 @@
         background-position: center;
     }
 
-    #home h1 {
-        font-size: 150%;
-        background-color: var(--third-color);
-        padding: 20px;
-        border-radius: 50px;
-        border: 2px solid var(--secondary-color);
+    /* Food Sections */
+    .foodSection {
+        padding-top: 12%;
     }
 
-    /* Food Sections */
     .foodDiv img {
         width: 100px;
         height: 100px;

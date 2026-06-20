@@ -77,8 +77,8 @@
         display: grid;
         place-items: center;
         gap: 1em;
-        padding-top: 12%;
-        padding-bottom: 12%;
+        padding-top: 15%;
+        padding-bottom: 25%;
     }
 
     .foodContainer {

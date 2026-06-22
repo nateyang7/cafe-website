@@ -76,9 +76,13 @@
     .foodSection {
         display: grid;
         place-items: center;
-        gap: 1em;
-        padding-top: 15%;
+        gap: 0.1em;
+        padding-top: 5%;
         padding-bottom: 25%;
+    }
+
+    .foodSection h1 {
+        margin-bottom: -3.5em;
     }
 
     .foodContainer {
@@ -88,6 +92,8 @@
     }
 
     .foodDiv {
+        width: 150px;
+        height: 150px;
         display: grid;
         place-items: center;
         border-radius: 30px;

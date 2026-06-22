@@ -1,5 +1,7 @@
 /* src/index.css */
 
+/* === General ============================================================== */
+
 @font-face {
     font-family: "KaiseiTokumin";
     src: url("./assets/font/Kaisei_Tokumin/KaiseiTokumin-Regular.ttf")
@@ -19,7 +21,13 @@
     font-family: "KaiserTokumin", serif;
 }
 
-/* === Mobile portrait =========================================================== */
+header,
+footer {
+    width: 100vw;
+}
+
+/* === Mobile portrait ====================================================== */
+
 @media (min-width: 320px) {
     header,
     footer {
@@ -113,12 +121,20 @@
 }
 
 /* === Tablet =============================================================== */
+
 @media (min-width: 768px) {
     h1 {
         font-size: 350%;
     }
+
+    .foodSection {
+        border: 1px solid black;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 /* === Desktop ============================================================== */
+
 @media (min-width: 1280px) {
 }

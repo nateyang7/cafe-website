@@ -33,15 +33,15 @@ header {
     left: 0;
 }
 
+section {
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 100vh;
+}
+
 /* === Mobile portrait ====================================================== */
 
 @media (min-width: 320px) {
-    section {
-        background-color: var(--main-color);
-        width: 100vw;
-        height: 100vh;
-    }
-
     h1 {
         font-size: 150%;
         text-align: center;

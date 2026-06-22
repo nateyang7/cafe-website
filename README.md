@@ -15,8 +15,8 @@ A café-restaurant website built as a practice project.
 
 ## Features
 - **Responsive design**
-  - [X] Mobile
-  - [ ] Tablet (WIP)
+  - [X] Mobile (portrait)
+  - [-] Tablet (portrait)
   - [ ] Desktop) (WIP)
 
 ## Installation

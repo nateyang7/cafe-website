@@ -72,6 +72,13 @@ h1 {
     place-items: center;
 }
 
+.foodDiv {
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 30px;
+}
+
 .foodDiv img {
     width: 100px;
     height: 100px;
@@ -103,10 +110,6 @@ h1 {
     .foodDiv {
         width: 150px;
         height: 150px;
-        display: grid;
-        place-items: center;
-        border-radius: 30px;
-        border: 2px solid var(--secondary-color);
         padding: 0.5em;
     }
 
@@ -123,7 +126,6 @@ h1 {
     }
 
     .foodSection {
-        border: 1px solid black;
         padding-top: 0;
         padding-bottom: 0;
     }

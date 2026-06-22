@@ -67,6 +67,11 @@ h1 {
 }
 
 /* Food Sections */
+.foodContainer {
+    display: grid;
+    place-items: center;
+}
+
 .foodDiv img {
     width: 100px;
     height: 100px;
@@ -92,8 +97,6 @@ h1 {
     }
 
     .foodContainer {
-        display: grid;
-        place-items: center;
         gap: 1em;
     }
 

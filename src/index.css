@@ -23,24 +23,19 @@
 
 header,
 footer {
+    background-color: var(--third-color);
     width: 100vw;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /* === Mobile portrait ====================================================== */
 
 @media (min-width: 320px) {
-    header,
-    footer {
-        background-color: var(--third-color);
-        width: 100vw;
-    }
-
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
     section {
         background-color: var(--main-color);
         width: 100vw;

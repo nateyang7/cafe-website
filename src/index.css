@@ -127,6 +127,10 @@ section {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .foodDiv p {
+        font-size: 75%;
+    }
 }
 
 /* === Desktop ============================================================== */

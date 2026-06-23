@@ -160,6 +160,11 @@ h1 {
         height: 250px;
     }
 
+    .foodDiv img {
+        width: 175px;
+        height: 175px;
+    }
+
     .foodDiv p {
         font-size: 100%;
     }

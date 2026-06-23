@@ -150,6 +150,16 @@ h1 {
         height: 50px;
     }
 
+    .foodContainer {
+        gap: 2em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .foodDiv {
+        width: 250px;
+        height: 250px;
+    }
+
     .foodDiv p {
         font-size: 100%;
     }

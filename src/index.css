@@ -35,6 +35,11 @@ header {
     left: 0;
 }
 
+footer {
+    display: grid;
+    place-items: center left;
+}
+
 /* Navigation Bar */
 .navBar ul {
     display: flex;
@@ -142,6 +147,6 @@ h1 {
 @media (min-width: 1280px) {
     header,
     footer {
-        height: 5%;
+        height: 50px;
     }
 }

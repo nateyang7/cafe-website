@@ -51,6 +51,15 @@ footer {
     padding: 0;
 }
 
+.navBar li {
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+
+.navBar li:hover {
+    background: black;
+}
+
 section {
     display: grid;
     place-items: center;
@@ -61,11 +70,11 @@ section {
 
 h1 {
     width: fit-content;
+    padding: 20px;
     text-align: center;
     background-color: var(--third-color);
     border: 2px solid var(--secondary-color);
     border-radius: 50px;
-    padding: 20px;
 }
 
 /* Home */

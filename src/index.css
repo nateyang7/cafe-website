@@ -149,4 +149,8 @@ h1 {
     footer {
         height: 50px;
     }
+
+    .foodDiv p {
+        font-size: 100%;
+    }
 }

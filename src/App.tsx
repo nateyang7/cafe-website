@@ -1,7 +1,5 @@
 // src/App.tsx
 
-import "./App.css";
-
 import type { NavigationLink } from "./components/NavBar.tsx";
 
 import NavBar from "./components/NavBar.tsx";

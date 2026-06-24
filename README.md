@@ -3,8 +3,6 @@
 ## Description
 A café-restaurant website built as a practice project.
 
-(WIP)
-
 ## Contents
 - [Features](#Features)
 - [Installation](#Installation)
